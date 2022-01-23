@@ -1,0 +1,267 @@
+﻿
+/* css-File für shiny app */
+/* Ulrike Niemann */
+
+/* ganze Seite: maximale Breite, zentrieren, Rahmen */
+body {
+	max-width:1200px;
+	margin:auto;
+	border: #367fa9 solid 3px;
+}
+
+/* Kopfzeile: Anwendungstitel */
+.ESUexplorer {
+	font-weight:bold;
+	font-family: 'Avant Garde',Avantgarde,'Century Gothic',CenturyGothic,AppleGothic,sans-serif;
+}
+
+/* Kopfzeile: close-Button */
+#close {
+	font-size:20px;
+	/*background-color:red;*/
+}
+.btn#close {
+	padding: 1px;
+	height: 23px;
+	width:25px;
+    line-height: 0.428571
+}
+#divClose .btn {
+	/*color:red;*/
+	margin: 10px 10px
+}
+
+/* Seitenmenü: aktiven Tab anzeigen */
+.sidebar-menu>li>a {
+	border-left-width: 5px !important;
+}
+/* Seitenmenü: Farbe aktiver Tab */
+.sidebar-menu>li.active>a {
+	border-left-color: #E8A01D !important;
+}
+/* Seitenmenü: Farbe aktiver Tab hover */
+.sidebar-menu>li:hover>a {
+/*	   border-left-color: transparent !important; */
+}
+
+/* Seitenmenü: der Text zwischen den MenuItems */
+.sidebar_text {
+	font-style: italic;
+	padding: 12px 5px 1px 22px;
+	color: #b8c7ce;
+	font-size:13px;
+}
+
+/* inputs */
+.form-group {
+	margin-bottom:0px !important;
+}
+
+/* Labels Eingabefelder */
+label {
+	font-weight:normal !important;
+	margin-bottom:0px !important;
+}
+
+/* alle Buttons */
+.btn-default {
+	background-color:#deebf3;
+	border-color:#808080;
+}
+.btn-default:hover {
+	background-color:#bbdcf0;
+	border-color:#585858;
+}
+
+
+/* Startseite ***************************************************************/
+/* valueBox */
+.small-box h3 {
+	font-size: 18px !important;
+	font-weight: normal !important;
+}
+/* icons in den valueBox */
+.small-box .icon-large {
+	color: rgba(0, 0, 0, 0.30) !important;
+}
+
+/* Metatabelle ***************************************************************/
+/* +- bei der MetaTabelle */
+.details-control {
+	cursor: pointer;
+	left: 10px;
+	height: 10px;
+	width: 10px;
+	display:block;
+	position: absolute;
+	color: white;
+	border: 2px solid white !important;
+	border-radius: 18px;
+	box-shadow: 0 0 3px #444;
+	text-align: center;
+	text-indent: 0 !important;
+	line-height: 10px; /*6px*/
+	background-color: #31b131;
+	padding:3px 3px 3px 3px !important;
+	margin-top:9px;
+	margin-left:-5px;
+	font-size:20px;
+}
+/* erste Zelle kein +- Zeichen */
+.details-control.sorting_disabled {
+	background-color: #ecf0f5 !important;
+	border:none !important;
+	box-shadow: none;
+}
+/* bei aufgeklappten Zeilen (-) - roter Hintergrund */
+.details-shown {
+	background-color:red;
+}
+
+/* der Rahmen wird manchmal nicht richtig dargestellt */
+table.dataTable {
+	border-collapse:collapse !important;
+}
+
+/* Analysen+Karten  **********************************************************/
+
+/* die ausgewählen Items in selectizeInputs */
+.selectize-input>.item, .selectize-control.multi>.selectize-input>.item {
+	background-color: #E6E6E6;
+	border: 1px solid lightgrey;
+	padding: 0px 2px;
+}
+
+/* checkboxen für fehlende Werte */
+.missCol {
+	margin-top:30px;
+}
+
+/* Buttons positionieren */
+#zeit-resetSettings, #jahr-resetSettings, #analyse-resetSettings {
+margin-top:-10px;
+}
+/* Button (Export Einstellungen) */
+#zeit-saveSettings, #jahr-saveSettings, #analyse-saveSettings {
+	width:100%;
+}
+
+/* Button Export Grafik */
+.exportButton {
+	margin:15px;
+}
+
+/* maximale Höhe für dataTable (scrollY) */
+.dataTables_scrollBody {
+	height:auto !important;
+	max-height:400px;
+} 
+
+/* DataTable Buttons: Abstand optimieren */
+.dt-buttons {
+	margin-top:10px;
+}
+
+
+/* Tabs bei Ergebnissen: aktiven Tab in grün anzeigen */
+.nav-tabs-custom > .nav-tabs > li.active {
+    border-top-color: #00a65a;
+}
+
+/* Abbildung Überschrift (Format wie bei DT), mit Zeilenumbruch */
+#zeit-abbText, 
+#jahr-abbText, 
+#analyse-abbText, 
+#karte-abbText, 
+#karte-abbTextK1,
+#karte-abbTextK2 {	
+	border: none !important;
+	background-color: transparent !important;
+	font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+	color: #777;
+	font-size:16px;
+	padding-left: 0px;
+	white-space: pre-wrap;
+    word-break: keep-all;
+}
+/* Tabellen Überschriften */
+caption {
+	font-size:16px;
+	padding-top:20px;
+}
+
+/* Hinweistext */
+.hinweis {
+	color:red;
+	font-size:14px;
+	padding: 5px 0px;
+}
+
+/* kleiner Hinweis */
+.miniHinweis {
+	font-size:12px;
+	font-style:italic;
+	text-align:center;
+}
+
+/* erweitere Filter- und Grafikeinstellungen  ********************************/
+#zeit-filterSettings .box.box-primary, #zeit-plotSettings .box.box-primary,
+#jahr-filterSettings .box.box-primary, #jahr-plotSettings .box.box-primary,
+#analyse-filterSettings .box.box-primary, #analyse-plotSettings .box.box-primary,
+#karte-filterSettings .box.box-primary, #karte-plotSettings .box.box-primary,
+#karte-kernelheapingCreate .box.box-primary, 
+#karte-kernelheapingPlotSettings .box.box-primary,
+#help-filterSettings .box.box-primary {
+	background:lightgrey;
+}
+#help-erweitert .box.box-primary .box-header {
+	background:lightgrey;
+}
+#help-erweitert .box.box-primary  {
+	border: 1px solid lightgrey;
+}
+
+/* erweiterte Filtereinstellung: die Inputs etwas kleiner */
+.selectSmall .selectize-input {
+	padding: 2px 6px;
+	min-height:20px;
+	font-size:12px;
+}
+.selectSmall .selectize-control.multi .selectize-input > div {
+	margin:2px 3px;
+}
+.selectSmall .selectize-control.multi .selectize-input.has-items {
+	padding:0px
+}
+/* erweiterte Filtereinstellung: Buttons je Filter */
+.resetFilter .btn {
+	color:red;
+    padding: 2px 6px;
+	margin: 0px 10px
+}
+.newFilter .btn {
+	color:#3c8dbc;
+    padding: 2px 6px;
+}
+
+/* Karten ********************************************************************/
+.girafe_container_std > svg {
+	max-width:100% !important;
+	max-height:600px !important;
+}
+
+/* Modals ********************************************************************/
+.shiny-input-container:not(.shiny-input-container-inline) {
+	width:100% !important;
+}
+
+/* DEMO-Version *** **********************************************************/
+
+#DEMO {
+	color:red;
+	font-size:25px;
+	text-align:left;
+	background-color: wheat;
+    margin: 6px 65px;
+    border-radius: 10px;
+}
