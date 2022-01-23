@@ -1,0 +1,35 @@
+rowVar1;ERW_Mutter_Kat3
+missValuesRowVar1;FALSE
+colVar1;FAM_KIND_Sex
+missValuesColVar1;TRUE
+rowVar2;A2q_Schuljahr
+missValuesRowVar2;TRUE
+wohnMitte;TRUE
+jahrFilter;2019
+filter1;
+operatorFilter1;gleich
+valueFilter1;NULL
+filter2;
+operatorFilter2;gleich
+valueFilter2;NULL
+filter3;
+operatorFilter3;gleich
+valueFilter3;NULL
+plotType;Säulen (gestapelt)
+labelsHidePlot;TRUE
+hidePercentPlot;8
+percentHide;TRUE
+geomTextSize;20
+baseSize;14
+legende;top
+color;Oranges
+aspectRatio;1.61803398874989
+trend;FALSE
+rowHide;(fehlende Werte)
+colHide;NULL
+rowHide2;NULL
+boxplot;TRUE
+violin;TRUE
+mw;TRUE
+bins;20
+density;TRUE

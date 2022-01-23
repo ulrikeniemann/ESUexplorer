@@ -1,0 +1,35 @@
+rowVar1;ZZ_q27_groesse
+missValuesRowVar1;FALSE
+colVar1;A2q_Schuljahr
+missValuesColVar1;TRUE
+rowVar2;FAM_KIND_Sex
+missValuesRowVar2;TRUE
+wohnMitte;TRUE
+jahrFilter;Alle Jahre
+filter1;
+operatorFilter1;gleich
+valueFilter1;
+filter2;
+operatorFilter2;gleich
+valueFilter2;
+filter3;
+operatorFilter3;gleich
+valueFilter3;
+plotType;Histogramm/Dichte
+labelsHidePlot;TRUE
+hidePercentPlot;0
+percentHide;FALSE
+geomTextSize;14
+baseSize;18
+legende;right
+color;Oranges
+aspectRatio;1.77777777777778
+trend;FALSE
+rowHide;NULL
+colHide;c("2010", "2011", "2012", "2013", "2014", "2015", "2016")
+rowHide2;NULL
+boxplot;TRUE
+violin;TRUE
+mw;FALSE
+bins;39
+density;TRUE
