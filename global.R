@@ -49,6 +49,7 @@ if (DEMO == FALSE) {
 } else {
   load("data/ESUdaten_DEMO.Rdata")
   meta <- read.xlsx("data/Metadaten_ESUexplorer_DEMO.xlsx") %>%
+    mutate(Anmerkungen = as.character(Anmerkungen)) %>%
     mutate_all(replace_na, "")
 }
 # Geodaten LOR
